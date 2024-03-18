@@ -1,0 +1,31 @@
+.slick-prev {
+    position: absolute;
+    z-index: 90;
+    left: 25px !important;
+}
+
+.slick-prev:before {
+    font-size:35px  !important;
+}
+.slick-next {
+    position: absolute;
+    z-index: 90;
+    right: 40px !important;
+}
+.slick-next:before {
+    font-size: 35px !important;
+}
+.slick-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slick-list {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+.slick-slide div {
+  width: auto;
+  margin-right: 10px;
+}
+

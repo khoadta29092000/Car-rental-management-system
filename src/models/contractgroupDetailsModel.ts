@@ -1,0 +1,68 @@
+import dayjs, { Dayjs } from "dayjs";
+export interface customerFilesDetailModel {
+    id: number;
+    customerInfoId: number;
+    typeOfDocument: string;
+    title: string;
+    documentImg: string;
+    documentDescription: string;
+}
+export interface contractgroupDetailsModel {
+    id: number;
+    requireDescriptionInfoGearBox: string;
+    requireDescriptionInfoPriceForDay: number;
+    userId: number;
+    staffEmail: string;
+    carId: number;
+    rentPurpose: string;
+    rentFrom: Date | null;
+    rentTo: Date | null;
+    requireDescriptionInfoCarClass: string;
+    requireDescriptionInfoCarBrand: string | null;
+    requireDescriptionInfoSeatNumber: number | null;
+    requireDescriptionInfoYearCreate: number;
+    requireDescriptionInfoCarColor: string;
+    deliveryAddress: string;
+    contractGroupStatusId: number;
+    contractGroupStatusName: string;
+    customerInfoId: number;
+    phoneNumber: string;
+    customerSocialInfoZalo: string;
+    customerSocialInfoFacebook: string;
+    customerSocialInfoLinkedin: string;
+    customerSocialInfoOther: string;
+    addtionalInfo: string;
+    relativeTel: string;
+    expertiseInfoIsFirstTimeRent: boolean;
+    expertiseInfoTrustLevel: string;
+    companyInfo: string;
+    customerName: string;
+    customerAddress: string;
+    path: string;
+    citizenIdentifyImage1: string;
+    citizenIdentifyImage2: string;
+    drivingLisenceImage1: string;
+    drivingLisenceImage2: string;
+    housePaperImages: string;
+    passportImages: string;
+    otherImages: string;
+    rentContracts: string;
+    transferContracts: string;
+    expertiseContractId: string;
+    expertiseContractStatusId: string;
+    expertiseContractStatusName: string;
+    rentContractId: string;
+    rentContractStatusId: string;
+    rentContractStatusName: string;
+    transferContractId: string;
+    transferContractStatusId: string;
+    transferContractStatusName: string;
+    receiveContractId: string;
+    receiveContractStatusId: string;
+    receiveContractStatusName: string;
+    citizenIdentificationInfoNumber: string;
+    citizenIdentificationInfoAddress: string;
+    citizenIdentificationInfoDateReceive: Date | Dayjs | null;
+    customerEmail: string; // thêm
+    customerFiles: customerFilesDetailModel[];
+}
